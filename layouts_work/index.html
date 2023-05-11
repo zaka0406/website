@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSSレイアウトの練習</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <h1 class="site-title">レイアウトの練習</h1>
+  </header>
+  <!-- //header -->
+
+  <!-- main -->
+  <main>
+    <!-- basic -->
+    <section class="section-wrapper">
+      <h2 class="section-title">
+        <span class="section-title-number">Basic</span>
+        <span class="section-title-jp">中央寄せの復習</span>
+      </h2>
+      <div class="basic-wrapper blue-bg">
+        <p class="basic-text">テキストの中央寄せはtext-align: center;</p>
+        <p class="basic-text">ブロックの中央寄せはwidthを指定して、margin: auto;</p>
+      </div>
+    </section>
+    <!-- //basic -->
+
+    <!-- flex01 -->
+    <section class="section-wrapper blue-bg">
+      <h2 class="section-title">
+        <span class="section-title-number">Flexbox01</span>
+        <span class="section-title-jp">複数行のカードリスト</span>
+      </h2>
+      <ul class="card-list">
+        <li class="card-item">
+          <div class="card-img"><img src="./images/pct_service01.jpg" alt=""></div>
+          <p class="card-text">プロトタイピングを推進する協力なツールで、チーム内の認識共有がスムーズに。</p>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="./images/pct_service02.jpg" alt=""></div>
+          <p class="card-text">事前にユーザーの反応を知ることができるため、サービス完成後の手戻りを防ぐ。</p>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="./images/pct_service03.jpg" alt=""></div>
+          <p class="card-text">プロトタイプを作成することにより、クライアントに対するプレゼンの説得力が向上。</p>
+        </li>
+      </ul>
+      <ul class="card-list">
+        <li class="card-item">
+          <div class="card-img"><img src="./images/pct_service01.jpg" alt=""></div>
+          <p class="card-text">プロトタイピングを推進する協力なツールで、チーム内の認識共有がスムーズに。</p>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="./images/pct_service02.jpg" alt=""></div>
+          <p class="card-text">事前にユーザーの反応を知ることができるため、サービス完成後の手戻りを防ぐ。</p>
+        </li>
+        <li class="card-item">
+          <div class="card-img"><img src="./images/pct_service03.jpg" alt=""></div>
+          <p class="card-text">プロトタイプを作成することにより、クライアントに対するプレゼンの説得力が向上。</p>
+        </li>
+      </ul>
+    </section>
+    <!-- //flex01 -->
+    
+    <!-- flex02 -->
+    <section class="section-wrapper">
+      <h2 class="section-title">
+        <span class="section-title-number">Flexbox02</span>
+        <span class="section-title-jp">互い違いの横並びレイアウト</span>
+      </h2>
+      <div class="flex-container_flex02">
+        <div class="img-wrapper_flex02"><img src="./images/pct_about.jpg" alt=""></div>
+        <div class="section-text-wrapper">
+          <h3 class="subheading">
+            早期のプロトタイピングで、<br>
+            完成後の手戻りを防ぐ
+          </h3>
+          <p class="section-text_flex02">Prot-typeはサービスの完成前にユーザーテストを行い、ユーザーからのフィードバックを得ることによってサービス完成後の手戻りを防ぐことができます。</p>
+        </div>
+      </div>
+      <div class="flex-container_flex02">
+        <div class="img-wrapper_flex02"><img src="./images/pct_about.jpg" alt=""></div>
+        <div class="section-text-wrapper">
+          <h3 class="subheading">
+            早期のプロトタイピングで、<br>
+            完成後の手戻りを防ぐ
+          </h3>
+          <p class="section-text_flex02">Prot-typeはサービスの完成前にユーザーテストを行い、ユーザーからのフィードバックを得ることによってサービス完成後の手戻りを防ぐことができます。</p>
+        </div>
+      </div>
+    </section>
+    <!-- //flex02 -->
+    
+    <!-- position01 -->
+    <section class="section-wrapper">
+      <h2 class="section-title">
+        <span class="section-title-number">position01</span>
+        <span class="section-title-jp">親要素内での中央配置</span>
+      </h2>
+      <div class="section-bg-wrapper">
+        <p class="section-text_position01">親要素position: relative;を指定し、子要素にposition: absolute;を指定すると、親要素内の任意の位置に子要素を配置することができます。</p>
+      </div>
+    </section>
+    <!-- //position01 -->
+
+    <!-- position02 -->
+    <section class="section-wrapper blue-bg">
+      <h2 class="section-title">
+        <span class="section-title-number">position02</span>
+        <span class="section-title-jp">ブロウクングリッド</span>
+      </h2>
+      <div class="broken-wrapper">
+        <div class="img-wrapper_broken"><img src="./images/pct_about.jpg" alt=""></div>
+        <p class="text_broken">positionを使用すると、グリッドにとらわれないデザインが可能です。ただし、レイアウトを実装する難易度が高くなるので、positionの乱用はしないようにしましょう。positionを指定した要素に対しては、z-indexで重なり順を変更することができます。</p>
+      </div>
+        
+    </section>
+    <!-- //position02 -->
+  </main>
+  <!-- //main -->
+
+  <!-- footer -->
+  <footer>
+    <p class="copy-right">&copy;copy right</p>
+  </footer>
+  <!-- //footer -->
+</body>
+</html>
+
+
+
+
+
+
+
+

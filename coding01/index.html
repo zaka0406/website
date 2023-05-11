@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS基礎</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <h1 class="site-title">コーティング基礎</h1>
+</header>
+<main class="main">
+    <!-- 見出し -->
+    <div class="kv-wrapper">
+        <div class="kv-copy">HTML/CSSで初歩的なWEBサイト作成</div>
+    </div>
+
+    <!-- Pタグの使い方 -->
+    <selection class="section-wrapper">
+        <h2 class="section-title">Pタグの使い方</h2>
+        <p class="section-text">本文の段落はPタグを使用。</p>
+    </selection>
+
+    <!-- リストのマークアップ -->
+    <selection class="section-wrapper">
+        <h2 class="section-title">リストのマークアップ</h2>
+            <ul class="ul-list">
+                <li class="ul-list-item">リスト全体をulタグで囲む</li>
+                <li class="ul-list-item">項目はliタグで囲む</li>
+                <li class="ul-list-item">liは「list-item」のこと</li>
+                <li class="ul-list-item">左側のドットはCSSで消すことが可能</li>
+            </ul>
+    </selection>
+
+    <!-- 横並び -->
+    <selection class="section-wrapper">
+        <h2 class="section-title">写真とテキストの横並び</h2>
+            <div class="flex-container">
+                <div class="section-img">
+                    <img src="./images/pct01.jpg" art="青い湖と赤い山肌">
+                </div>
+                <p class="section-text_right">写真は<span class="inline-bg">imgタグ</span>で表示します。ブロック要素同士を横に並べるときは、親要素に<span class="inline-color">display: flex;</span>を指定します。</p>
+            </div>
+    </section>
+    <!-- //写真とテキストの横並び -->
+
+            </div>
+    </selection>
+
+    <!-- ハイパーリンク -->
+    <selection class="section-wrapper section-link">
+        <h2 class="section-title">ハイパーリンク</h2>
+        <div class="section-inner">
+            <p class="section-text-left">ハイパーリンクを作るには、リンクにしたいテキストや画像をaタグで囲みます。今回は、テキストリンクと画像リンクを作成してみましょう。リンク先を別タブで開くようにするにはtarget属性に"_blank”と入力します。リンクの下線を消したい場合は、text-decoration: none;を指定します。</p>
+                <div class="section-img">
+                    <a href="https://www.google.com/?hl=ja" target="blank">
+                        <img src="./images/pct02.jpg" alt="黒いマウスを操作">
+                    </a>
+                </div>
+                <div class="section-img">
+                     <a href="https://www.google.com/?hl=ja" target="blank">
+                        テキストリンク
+                     </a> 
+                </div>
+        </div>
+    </selection>
+</main>     
+
+<footer class="copy-right">
+    @ZAKAコピーライト
+</footer>
+
+</body>
+</html>

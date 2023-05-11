@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <hi class="rogo">
+            <a href="http://127.0.0.1:5501/coding02/index.html#">Prot-type</a>
+        </hi>
+        <ul class="nav">
+            <li class="nav-content">
+                <a href="#">about</a>
+            </li>
+            <li class="nav-content">
+                <a href="#">service</a>
+            </li>
+            <li class="nav-content">
+                <a href="http://127.0.0.1:5501/coding02/contact/contact.html">content</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="contact-image">
+             <h2 class="contact">contact</h2>
+        </div>
+        <p class="form-nav">
+            製造・サービスについての問い合わせは、お申込みについては以下のお問い合わせフォーム<br class="enter">
+            よりご連絡ください。採用・プレスリリースについてのご質問もお待ちしております。
+        </p>
+        <form action="#.php" class="contact-form">
+            <label for="name" class="contact-nav">
+                <span class="name">お名前</span>
+                <span class="required">必須</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="お名前を入力してください">
+
+            <label for="email" class="contact-nav">
+                <span class="name">メールアドレス</span>
+                <span class="required">必須</span>
+            </label>
+            <input type="text" id="email" name="email" placeholder="example@example.com">
+
+            <label for="company_name" class="contact-nav">
+                <span class="name">会社名</span>
+            </label>
+            <input type="text" id="company_name" name="company_name" placeholder="会社名を入力してください">
+
+            <label for="radio" class="contact-nav">
+                <span class="name">お問い合わせ項目</span>
+                <span class="required">必須</span>
+            </label>
+
+            <div class="radiobutton">
+                <label for="service" class="radio-boton">
+                    <input type="radio" name="service" id="service">サービスについて<br>
+                </label>
+                <label for="coverage" class="radio-boton">            
+                    <input type="radio" name="coverage" id="coverage">取材関連<br>
+                </label>
+                <label for="recruitment" class="radio-boton">
+                    <input type="radio" name="recruitment" id="recruitment">採用に関して<br>
+                </label>
+                <label for="other" class="radio-boton">
+                    <input type="radio" name="other" id="other">その他<br>
+                </label>
+            </div>
+
+                <label for="message" class="contact-nav">
+                    <span class="name">お問い合わせ内容</span>
+                    <span class="required">必須</span>
+                </label>
+                <textarea name="message" id="message" placeholder="こちらにご記入をお願いします" ></textarea>
+
+                <p class="coment">入力の上送信してください</p>
+
+                <input type="submit" value="送信する">
+               
+    
+
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copy">
+            ©Prot-type all rights reserved
+        </p>
+    </footer>
+    
+    
+</body>
+</html>

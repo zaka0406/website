@@ -1,0 +1,223 @@
+/* ヘッダー */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C5EB7;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.rogo{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    height: 40px;
+    padding:10px 0px 0px 20px;
+}
+
+
+.nav{
+ display: flex;
+ list-style: none;
+ padding: 35px 20px 27px 0px;
+}
+
+.nav-content{
+    padding-right: 40px;
+}
+
+a {
+    color: white;
+}
+
+header a:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* contact */
+.contact-image{
+    box-sizing: border-box;
+    background-image: url("../images/img_bg_contact.jpg");
+    background-size: cover;
+    background-position: absolute;
+    max-width: 100%;
+    height: 300px;
+}
+
+.contact{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 115px 0px 0px 0px;
+}
+
+/* 問い合わせ案内 */
+.form-nav{
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* 問い合わせフォーム */
+.contact-form{
+    padding: 0px 250px 40px;
+}
+
+
+.contact-nav{
+    display: block;
+    margin:40px 0px 10px;
+}
+
+.name{
+    color: darkblue;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.required{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 10px;
+    background-color: coral;
+    border-radius: 2px;
+}
+
+input[type="text"] {
+    height: 20px;
+    width: 700px; /* 入力フォームの幅を設定 */
+    background-color:#EEEEEE;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #444444;
+  }
+
+
+  .radio-boton{
+    display: block;
+    padding: 10px;
+  }
+ 
+  textarea{
+    width: 700px;
+    height: 200px;
+    background-color:#EEEEEE;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+
+  .coment{
+    text-align: center;
+    padding: 20px;
+  }
+
+  input[type="submit"]{
+    height: 56px;
+    width: 220px;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: #2C5EB7;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+
+/* フッター */
+.footer{
+    background-color: #2C5EB7;
+    text-align: center;
+    height: 40px;
+}
+
+.footer-copy{
+    color: white;
+    padding-top: 10px;
+}
+
+/* レスポンシブル */
+
+@media screen and (max-width: 480px) {
+    .header{
+        height: 50px;
+    }
+
+    .nav{
+        padding-top: 20px;
+    }
+
+    .nav-content{
+        padding-right: 20px;
+    }
+
+    .contact-image{
+        height: 200px;
+    }
+
+    .rogo{
+        font-size: 15px;
+        padding: 30px 20px 10px;
+        }
+
+     .form-nav{
+         font-size: 12px;
+        padding: 0px 10px;
+        margin: 20px 0px;
+        }  
+        
+  
+    br{
+        display: none;
+    }
+
+    .contact-form{
+        box-sizing: border-box;
+        padding: 0px 10px 20px;
+    }
+
+    .contact-nav{
+        margin-top: 10px;
+    }
+
+    input[type="text"]{
+        width: 430px;
+        height: 10px;
+    }
+
+    textarea{
+        width: 430px;
+        height: 70px;
+    }
+
+ 
+    .radiobutton{
+        font-size: 12px;
+      }
+
+    .name{
+        font-size: 12px;
+    }
+
+    .required{
+        font-size: 10px;
+    }
+
+    .coment{
+        font-size: 12px;
+    }
+    input[type="submit"]{
+        height: 23px;
+        width: 110px;
+        font-size: 12px;
+    }
+}

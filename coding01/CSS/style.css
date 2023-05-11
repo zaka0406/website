@@ -1,0 +1,139 @@
+/* 全体に適用 */
+
+body{
+    font-family: "noto Sans JP", sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.section-wrapper{
+    padding: 80px;
+}
+
+.section-title{
+    color: #11376b;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ヘッダー */
+.site-title{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+header{
+    background-color: #11376b;
+    padding: 20px;
+}
+
+/* KV部分 */
+.kv-wrapper{
+    padding: 200px 0;
+    background-image: url(../images/kv-img.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.kv-copy{
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+/* Pタグの使いかた */
+.section-text{
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-wrapper{
+    text-align: center;
+}
+
+/* リスト装飾 */
+.ul-list {
+    text-align: center;
+  }
+  
+  /* 左寄せを維持したまま中央揃え */
+  .ul-list-item {
+    /* ブロック要素へ変換 */
+    display: block;
+    /* 要素左端揃え */
+    text-align: left;
+    padding: 10px;
+    /* ブロックを中央揃え */
+    margin: 0 auto;
+    /* MAX幅を決めてうまく中央へ来るように200pxで調整 */
+    max-width:200px; /* 適宜変更してください */
+  }
+
+/* 写真とテキスト横並び */
+.flex-container{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.section-img{
+    max-width: 300px;
+}
+
+.section-text_right{
+    max-width: 450px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.inline-bg{
+    background-color: red;
+  }
+  .inline-color{
+    color: red;
+  }
+
+  /* ハイパーリンク */
+  .section-inner{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .section-text-left{
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: start;
+  }
+
+  /* 親に対して子要素2つに適用 */
+  .section-link .section-text-left,.section-link .section-img{
+    margin-bottom: 20px;
+  }
+
+  /* フッター */
+  footer{
+    background-color: cornflowerblue;
+    padding: 30px;
+  }
+
+  .copy-right{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+  }
