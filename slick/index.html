@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スライドショー</title>
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="slick1">
+        <div><img src="images/1.jpg" alt="Description of the image bar"></div>
+        <div><img src="images/2.jpg" alt="Description of the image desk"></div>
+        <div><img src="images/3.jpg" alt="Description of the image neon"></div>
+        <div><img src="images/4.jpg" alt="Description of the image desk2"></div>
+        <div><img src="images/5.jpg" alt="Description of the image ligting"></div>
+    </div>
+
+    <!-- jqueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- javascript読み込み -->
+    <script src="slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(function(){
+                $(`.slick1`).slick({
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    dots: true,
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

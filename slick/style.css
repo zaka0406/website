@@ -1,0 +1,13 @@
+.slick1{
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+img{
+    width: 800px;
+    height: 600px;
+    /* 画像を引き伸ばしてでも、親要素全体に表示させることができるプロパティとなります?/ */
+    object-fit: cover;
+    border-radius: 10px;
+}
