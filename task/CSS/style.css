@@ -1,0 +1,290 @@
+/* 統一指定 */
+.header,.key{
+    background-color: #53DAC1;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.title{
+    text-align: center;
+    margin: 100px 0 50px 0;
+    font-size: 42px;
+    font-weight: bold;
+    color: #53E6CB;
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+}
+
+/* ヘッダー部分 */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    z-index: 9999;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-nav{
+    padding-right: 120px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.list{
+    padding-right: 40px;
+}
+
+.burger-btn{
+    display: none;
+}
+
+/* メイン部分 */
+main{
+    padding-top: 60px;
+    height: calc(100vh-100px);
+}
+
+main,footer{
+    background-color:  #FEFDF3;
+}
+
+/* キー部分 */
+.key{
+    /* height: 440px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.key-contents{
+    box-sizing: border-box;
+    margin:140px 110px 140px;
+}
+
+.key-title{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.key-text{
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.key-bton{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: coral;
+    border-radius: 26px;
+    height:30px;
+    width: 200px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* キー画像 */
+.key-image-custom{
+    box-sizing: border-box;
+    height: 300px;
+    width: 400px;
+}
+.key-image{
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+/* ブログ部分 */
+.blog-content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.blog-content-list{
+    width: 288px;
+    height: 258px;
+    margin: 0 20px 0 20px;
+}
+
+.blog-content-text-img{
+    height: 190px;
+    width: 288px;
+}
+
+.blog-content-text{
+    margin: 5px;
+}
+
+.blog-bton{
+    background-color: coral;
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 26px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+/* コンタクト部分 */
+.contact-form{
+    text-align: center;
+}
+
+.contact-nav{
+    display: block;
+    width: 700px;
+    margin: 40px auto 5px auto;
+    text-align: left;
+}
+
+.required{
+    display: inline-block;
+    text-align: center;
+    background-color: coral;
+    height: 20px;
+    width: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+input[type="text"],input[type="email"]{
+    box-sizing: border-box;
+    width: 700px;
+    height: 42px;
+    border-radius: 5px;
+    border-color: #53DAC1;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 700px;
+    height: 200px;
+    border-radius: 5px;
+    border-color: #53DAC1;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 20px;
+}
+
+.info{
+    font-size: 16px;
+    color: darkgrey;
+    margin:20px 0 40px;
+}
+
+input[type="submit"]{
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 120px;
+}
+
+/* フッター部分 */
+.footer{
+    height: 40px;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 480px){
+    .header{
+        height: 30px;
+        font-size: 10px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    main{
+        padding-top: 0;
+    }
+
+    .key{
+        flex-direction: column-reverse; 
+        margin: 0 auto; 
+    }
+        
+    .key-contents{
+        margin: 0 auto;
+    }
+
+    .key-title{
+        font-size: 15px;
+    }
+
+    .key-text{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .key-bton{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .key-image-custom{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .blog-content{
+        display: block;
+    }
+
+    .blog-content-list{
+        margin: 0 auto;
+    }
+    .contact-nav{
+        padding-left: 25px;
+    }
+    input[type="text"],input[type="email"]{
+        width: 90%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+}

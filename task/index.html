@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer's blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <header class="header">
+        <h2 class="logo">
+           <a href="#">Designer's blog</a>
+        </h2>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="list">
+                    <a href="#">Home</a>
+                </li>
+                <li class="list">
+                    <a href="#">About</a>
+                </li>
+                <li class="list">
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="burger-btn">
+            <span class="bar bar-top"></span>
+            <span class="bar bar-middle"></span>
+            <span class="bar bar-bottom"></span>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- キー部分 -->
+        <section class="key">
+            <div class="key-contents">
+                <h1 class="key-title">
+                    webデザイナーになろう
+                </h1>
+                <p class="key-text">
+                    現役WebデザイナーのWebデザイン学習ブログ
+                </p>
+                <div class="key-bton">
+                    <a href="#">運営者のプロフィールを見る</a>
+                </div>
+           </div>
+           <div class="key-image">
+                <img class="key-image-custom" src="./img/pct_fv-illust.png" alt="キービジュアル">
+           </div>
+        </section>
+
+        <!-- ブログ部分 -->
+        <section class="blog">
+            <div class="title">BLOG</div>
+            <div class="blog-content">
+                <div class="blog-content-list">
+                    <img class="blog-content-text-img" src="./img/画像①.jpg" alt="#">
+                    <p class="blog-content-text">
+                        【実例あり】情報統計に役立つ、ワイヤーフレームの作り方   
+                    </p>
+                </div>
+                <div class="blog-content-list">
+                    <img class="blog-content-text-img" src="./img/画像②.jpg" alt="#">
+                    <p class="blog-content-text">
+                        初学者がコーディング時に気を付けるべきこと3選   
+                    </p>
+                </div>
+                <div class="blog-content-list">
+                    <img class="blog-content-text-img" src="./img/画像③.png" alt="#">
+                    <p class="blog-content-text">
+                        【事例で学ぶ】Webサイトのファーストビューのデザインパターン   
+                    </p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-content-list">
+                    <img class="blog-content-text-img" src="./img/画像④.jpg" alt="#">
+                    <p class="blog-content-text">
+                        【フリーランス】都内のおすすめコワーキングスペース10選  
+                    </p>
+                </div>
+                <div class="blog-content-list">
+                    <img class="blog-content-text-img" src="./img/画像⑤.jpg" alt="#">
+                    <p class="blog-content-text">
+                        デザイナーでも知っておきたいWebサービスの仕組み 
+                    </p>
+                </div>
+                <div class="blog-content-list">
+                    <img class="blog-content-text-img" src="./img/画像⑥.jpg" alt="#">
+                    <p class="blog-content-text">
+                        【特集】AIが変えるWebデザイナーのワークフロー   
+                    </p>
+                </div>
+            </div>
+            <div class="blog-bton">
+                <a href="#">もっと見る</a>
+            </div>
+        </section>
+        <!-- 問い合わせ部分 -->
+        <section class="contact">
+            <div class="title">Contact</div>
+            <form action="" class="contact-form" method="post">
+                <label for="name" class="contact-nav">
+                    <span class="name">お名前</span>
+                    <span class="required">必須</span>
+                </label>
+                <input type="text" id="name" name="username" value="" placeholder="山田太郎">
+                <label for="email" class="contact-nav">
+                    <span class="name">Eメールアドレス</span>
+                    <span class="required">必須</span>
+                </label>
+                <input type="email" id="email" name="email" value="" placeholder="example@example.com">
+                <label for="message" class="contact-nav">
+                    <span class="name">お問い合わせ内容</span>
+                </label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="こちらにご記入ください"></textarea>   
+                <P class="info">内容を確認のうえ送信ボタンを押してください</P>
+                <input type="submit" class="blog-bton" value="送信" >
+           </form>
+        </section>
+
+        <footer class="footer">
+            @Prot-type all rights reserved
+        </footer>
+            
+    </main>
+    
+</body>
+</html>
