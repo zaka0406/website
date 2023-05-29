@@ -2,6 +2,7 @@
 .header,.key{
     background-color: #53DAC1;
     color: white;
+    
 }
 
 a{
@@ -16,12 +17,8 @@ a{
     color: #53E6CB;
 }
 
-main{
-    width: 100%;
-}
-
-footer{
-    width: 100%;
+.wrap {
+	overflow: hidden;
 }
 
 /* ヘッダー部分 */
@@ -43,14 +40,13 @@ footer{
     font-weight: bold;
 }
 
-.header-nav{
-    padding-right: 120px;
-}
 
 .nav-list{
     display: flex;
     justify-content: space-around;
     font-size: 16px;
+    padding-right: 120px;
+    list-style: none;
 }
 
 .list{
@@ -63,8 +59,8 @@ footer{
 
 /* メイン部分 */
 main{
-    padding-top: 60px;
-    height: calc(100vh-100px);
+    /* padding-top: 60px; */
+    width: 100%;
 }
 
 main,footer{
@@ -78,6 +74,7 @@ main,footer{
     justify-content: center;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .key-contents{
@@ -114,9 +111,9 @@ main,footer{
     box-sizing: border-box;
     height: 300px;
     width: 400px;
+    vertical-align: bottom;
 }
 .key-image{
-    box-sizing: border-box;
     margin-top: 80px;
 }
 
@@ -137,6 +134,7 @@ main,footer{
 .blog-content-text-img{
     height: 190px;
     width: 288px;
+    vertical-align: bottom;
 }
 
 .blog-content-text{
@@ -157,6 +155,7 @@ main,footer{
 /* コンタクト部分 */
 .contact-form{
     text-align: center;
+
 }
 
 .contact-nav{
@@ -223,6 +222,7 @@ input[type="submit"]{
     color: gray;
     font-size: 12px;
     margin-top: 10px;
+    width: 100%;
 }
 
 /* スマホ対応 */
@@ -230,14 +230,85 @@ input[type="submit"]{
     .header{
         height: 30px;
         font-size: 10px;
-        width: 100%;
         padding-left: 10px;
     }
 
-    .header-nav{
-        display: none;
+    /* バーガーメニュー */
+    .burger-btn{
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin-right: 30px;
     }
 
+    .bar{
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-radius: 1px;
+        background-color: #FEFDF3;
+        position: absolute;
+        z-index: 9;
+    }
+
+    .bar-top{
+        top:0;
+    }
+
+    .bar-middle{
+        top:9px;
+    }
+
+    .bar-bottom{
+        bottom: 0;
+    }
+
+    /* 発火時CSS */
+    .burger-btn.cross .bar-top{
+        transform: rotate(45deg);
+        top: 11px;
+        transition: 3s;
+    } 
+
+    .burger-btn.cross .bar-middle{
+        opacity: 0;
+        transition: 3s;
+    }
+
+    .burger-btn.cross .bar-bottom{
+        transform: rotate(-45deg);
+        bottom: 5px;
+        transition: 3s;
+    }
+
+    /* 発火時のメニュー見た目 */
+    .nav-list{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background-color: #53E6CB;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list{
+        text-align: center;
+        box-sizing: border-box;
+        margin: 5px 0;
+    }
+
+    .list a{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* ハンバガーメニュー終了 */
+
+    /* メイン指定 */
     main{
         padding-top: 0;
     }
@@ -268,6 +339,10 @@ input[type="submit"]{
     .key-image-custom{
         width: 100%;
         margin-top: 0;
+    }
+
+    .title{
+        font-size: 21px;
     }
 
     .blog-content{
